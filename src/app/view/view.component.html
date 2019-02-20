@@ -1,0 +1,21 @@
+<div style="text-align:left">
+  <input type='text' [(ngModel)] = 'user'>
+  <button (click)='search()'>search</button>
+
+<div *ngIf = 'response'>
+  <p>{{response.name}};</p>
+  <p>{{response.location}};</p>
+  <p>{{response.type}};</p>
+  <p>{{response.login}};</p>
+  
+</div>
+<div>
+  <h1>Create Case</h1>
+  <table style="width:100%">
+      UserId:<input [(ngModel)] = "username"><br/><br/>
+      Title:<input [(ngModel)]= "title"><br/><br/>
+      Body:<input [(ngModel)] = "body"><br/><br/>
+  </table>
+</div>
+<button (click)='save(username,title,body)'>save</button>
+</div>
